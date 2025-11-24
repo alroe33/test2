@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>소수구하기</title>
+<script>
+</script>
+</head>
+
+<body>
+<h3>구구단</h3>
+<hr>
+<script>
+	let y=[];
+	for (i=2; i<=20; i++){
+		let x=ture;
+		for(j=2; j<i; j++){
+			if(i%j===0){
+				x=flase;
+				break;
+			}
+		}
+		if(x){
+			y.push(i);
+		}
+	}
+	doucument.write("소수:"+y.join(","))
+</script>
+
+</body>
+</html>
